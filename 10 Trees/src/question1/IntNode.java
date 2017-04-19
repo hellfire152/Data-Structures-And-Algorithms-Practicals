@@ -33,4 +33,31 @@ public class IntNode{
 	public void setRight(IntNode inRight){
 		right = inRight;
 	}
+	public void inOrderPrint() {
+		if (left != null) {
+			left.inOrderPrint();
+		}
+		System.out.print(data + " ");
+		if (right != null) {
+			right.inOrderPrint();
+		}
+	}
+	public void preOrderPrint() {
+		System.out.print(data + " ");
+		if (left != null) {
+			left.preOrderPrint();
+		}
+		if (right != null) {
+			right.preOrderPrint();
+		}
+	}
+	public void postOrderPrint() {
+		if (left != null) {
+			left.postOrderPrint();
+		}
+		if (right != null) {
+			right.postOrderPrint();
+		}
+		System.out.print(data + " ");
+	}
 }

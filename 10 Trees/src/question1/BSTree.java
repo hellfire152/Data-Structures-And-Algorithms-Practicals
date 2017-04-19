@@ -51,4 +51,20 @@ public class BSTree {
 			}
 		}
 	}
+	
+	public void inOrderPrint() {
+		System.out.println("In Order:");
+		pTree.inOrderPrint();
+		System.out.println();
+	}
+	public void preOrderPrint() {
+		System.out.println("Pre Order:");
+		pTree.preOrderPrint();
+		System.out.println();
+	}	
+	public void postOrderPrint() {
+		System.out.println("Post Order:");
+		pTree.postOrderPrint();
+		System.out.println();
+	}
 }

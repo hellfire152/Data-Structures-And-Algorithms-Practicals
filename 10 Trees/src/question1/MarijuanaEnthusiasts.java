@@ -7,5 +7,10 @@ public class MarijuanaEnthusiasts {
 		for (int i : ints) {
 			tree.add(i);
 		}
+		
+		tree.inOrderPrint();
+		tree.preOrderPrint();
+		tree.postOrderPrint();
 	}
+
 }
