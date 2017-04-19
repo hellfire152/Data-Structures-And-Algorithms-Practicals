@@ -90,6 +90,9 @@ public class Student {
 		return recs;
 	}
 	
+	public String toRecord() {
+		return adminNo+';'+name+';'+birthDate+';'+test1+';'+test2+';'+test3+';';
+	}
 	/* GETTERS AND SETTERS */
 	public String getAdminNo() {
 		return adminNo;
